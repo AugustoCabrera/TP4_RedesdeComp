@@ -1,6 +1,9 @@
 import socket
+import logging
+from datetime import datetime
 
-#RUN  python ServerTCP.py
+# Configurar el registro
+logging.basicConfig(filename='server.log', level=logging.INFO, format='%(asctime)s - %(message)s')
 
 def start_tcp_server(host, port):
     # Crear un socket TCP/IP
@@ -21,21 +24,30 @@ def start_tcp_server(host, port):
         try:
             print(f'Conexión desde {client_address}')
             
+            # Registrar la conexión
+            logging.info(f'Conexión establecida desde {client_address}')
+            
             # Recibir los datos en pequeños fragmentos y retransmitirlos
             while True:
                 data = connection.recv(1024)
                 if data:
-                    print(f'Recibido: {data.decode()}')
+                    message = data.decode()
+                    print(f'Recibido: {message}')
+                    
+                    # Registrar el mensaje recibido con la hora y dirección IP
+                    logging.info(f'Mensaje recibido de {client_address}: {message}')
                 else:
                     print('No hay más datos desde', client_address)
                     break
                 
         except Exception as e:
             print(f'Error en la conexión: {e}')
+            logging.error(f'Error en la conexión desde {client_address}: {e}')
         
         finally:
             # Cerrar la conexión
             connection.close()
+            logging.info(f'Conexión cerrada desde {client_address}')
 
 # Configuración
 host = '127.0.0.1'  # Dirección IP del servidor (LOCALHOST)

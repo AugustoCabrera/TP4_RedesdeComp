@@ -1,0 +1,12 @@
+2024-05-23 18:03:37,540 - Conexión establecida desde ('127.0.0.1', 64101)
+2024-05-23 18:03:37,540 - Mensaje recibido de ('127.0.0.1', 64101): MPP-0
+2024-05-23 18:03:39,541 - Mensaje recibido de ('127.0.0.1', 64101): MPP-1
+2024-05-23 18:03:41,544 - Mensaje recibido de ('127.0.0.1', 64101): MPP-2
+2024-05-23 18:03:43,549 - Mensaje recibido de ('127.0.0.1', 64101): MPP-3
+2024-05-23 18:03:45,549 - Mensaje recibido de ('127.0.0.1', 64101): MPP-4
+2024-05-23 18:03:47,551 - Mensaje recibido de ('127.0.0.1', 64101): MPP-5
+2024-05-23 18:03:49,552 - Mensaje recibido de ('127.0.0.1', 64101): MPP-6
+2024-05-23 18:03:51,553 - Mensaje recibido de ('127.0.0.1', 64101): MPP-7
+2024-05-23 18:03:53,554 - Mensaje recibido de ('127.0.0.1', 64101): MPP-8
+2024-05-23 18:03:55,555 - Mensaje recibido de ('127.0.0.1', 64101): MPP-9
+2024-05-23 18:03:57,557 - Conexión cerrada desde ('127.0.0.1', 64101)
